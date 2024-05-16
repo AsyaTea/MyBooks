@@ -13,6 +13,7 @@
 		41D90A2B2BF6727E00C35869 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D90A2A2BF6727E00C35869 /* Preview Assets.xcassets */; };
 		41D90A2D2BF6727E00C35869 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D90A2C2BF6727E00C35869 /* Persistence.swift */; };
 		41D90A302BF6727E00C35869 /* MyBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41D90A2E2BF6727E00C35869 /* MyBooks.xcdatamodeld */; };
+		41D90A3C2BF6737F00C35869 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D90A3B2BF6737F00C35869 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		41D90A2A2BF6727E00C35869 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		41D90A2C2BF6727E00C35869 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		41D90A2F2BF6727E00C35869 /* MyBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBooks.xcdatamodel; sourceTree = "<group>"; };
+		41D90A3B2BF6737F00C35869 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,12 @@
 			isa = PBXGroup;
 			children = (
 				41D90A232BF6727D00C35869 /* MyBooksApp.swift */,
-				41D90A252BF6727D00C35869 /* ContentView.swift */,
-				41D90A272BF6727E00C35869 /* Assets.xcassets */,
+				41D90A362BF672AB00C35869 /* Model */,
+				41D90A372BF672B300C35869 /* ViewModel */,
+				41D90A382BF672BA00C35869 /* Views */,
 				41D90A2C2BF6727E00C35869 /* Persistence.swift */,
 				41D90A2E2BF6727E00C35869 /* MyBooks.xcdatamodeld */,
+				41D90A272BF6727E00C35869 /* Assets.xcassets */,
 				41D90A292BF6727E00C35869 /* Preview Content */,
 			);
 			path = MyBooks;
@@ -71,6 +75,29 @@
 				41D90A2A2BF6727E00C35869 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41D90A362BF672AB00C35869 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41D90A372BF672B300C35869 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41D90A382BF672BA00C35869 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41D90A252BF6727D00C35869 /* ContentView.swift */,
+				41D90A3B2BF6737F00C35869 /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +173,7 @@
 				41D90A302BF6727E00C35869 /* MyBooks.xcdatamodeld in Sources */,
 				41D90A2D2BF6727E00C35869 /* Persistence.swift in Sources */,
 				41D90A262BF6727D00C35869 /* ContentView.swift in Sources */,
+				41D90A3C2BF6737F00C35869 /* MainView.swift in Sources */,
 				41D90A242BF6727D00C35869 /* MyBooksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
