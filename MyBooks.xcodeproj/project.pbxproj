@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41B477FD2C1DF0EB00732FBD /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B477FC2C1DF0EB00732FBD /* BookModel.swift */; };
 		41D90A242BF6727D00C35869 /* MyBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D90A232BF6727D00C35869 /* MyBooksApp.swift */; };
 		41D90A262BF6727D00C35869 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D90A252BF6727D00C35869 /* ContentView.swift */; };
 		41D90A282BF6727E00C35869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D90A272BF6727E00C35869 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41B477FC2C1DF0EB00732FBD /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		41D90A202BF6727D00C35869 /* MyBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D90A232BF6727D00C35869 /* MyBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksApp.swift; sourceTree = "<group>"; };
 		41D90A252BF6727D00C35869 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		41D90A362BF672AB00C35869 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				41B477FC2C1DF0EB00732FBD /* BookModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B477FD2C1DF0EB00732FBD /* BookModel.swift in Sources */,
 				41D90A302BF6727E00C35869 /* MyBooks.xcdatamodeld in Sources */,
 				41D90A2D2BF6727E00C35869 /* Persistence.swift in Sources */,
 				41D90A262BF6727D00C35869 /* ContentView.swift in Sources */,
@@ -321,7 +325,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.asyatealdi.MyBooks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asyatea.MyBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -350,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.asyatealdi.MyBooks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asyatea.MyBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
