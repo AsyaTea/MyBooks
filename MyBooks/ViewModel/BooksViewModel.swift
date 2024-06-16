@@ -42,5 +42,15 @@ class BooksViewModel: ObservableObject {
         
     }
     
+    func secureImageUrl(from urlString: String?) -> URL? {
+            guard let urlString = urlString, var urlComponents = URLComponents(string: urlString) else {
+                return nil
+            }
+            if urlComponents.scheme == "http" {
+                urlComponents.scheme = "https"
+            }
+            return urlComponents.url
+        }
+    
 
 }

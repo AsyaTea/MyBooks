@@ -22,7 +22,7 @@ struct SearchBookView: View {
 
                 List(vm.books) { book in
                     NavigationLink {
-                        BookDetailPageView(book: book)
+                        BookDetailPageView(vm: vm, book: book)
                     } label: {
                         VStack(alignment: .leading) {
                             Text(book.volumeInfo.title)

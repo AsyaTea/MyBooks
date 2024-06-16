@@ -8,21 +8,24 @@
 import SwiftUI
 
 struct BookDetailPageView: View {
+    @ObservedObject var vm: BooksViewModel
     var book: Book
     var body: some View {
         ScrollView {
                    VStack(alignment: .leading, spacing: 16) {
-                       if let imageUrl = book.volumeInfo.imageLinks?.thumbnail, let url = URL(string: imageUrl) {
-                           AsyncImage(url: url) { image in
-                               image
-                                   .resizable()
-                                   .scaledToFit()
-                                   .frame(maxWidth: .infinity)
-                                   .cornerRadius(10)
-                           } placeholder: {
-                               ProgressView()
-                           }
-                       }
+                       if let imageUrl = vm.secureImageUrl(from: book.volumeInfo.imageLinks?.thumbnail) {
+                                           AsyncImage(url: imageUrl) { image in
+                                               image
+                                                   .resizable()
+                                                   .scaledToFit()
+                                                   .frame(maxWidth: .infinity)
+                                                   .cornerRadius(10)
+                                           } placeholder: {
+                                               ProgressView()
+                                           }
+                                       } else {
+                                           Text("Image not available")
+                                       }
 
                        Text(book.volumeInfo.title)
                            .font(.title)
@@ -81,5 +84,5 @@ struct BookDetailPageView: View {
 }
 
 #Preview {
-    BookDetailPageView(book: mockBooks.first!)
+    BookDetailPageView(vm: BooksViewModel(), book: mockBooks.first!)
 }
