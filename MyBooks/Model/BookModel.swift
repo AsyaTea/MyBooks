@@ -22,7 +22,7 @@ struct Book: Codable, Identifiable {
     var id, etag: String
     let selfLink: String
     let volumeInfo: VolumeInfo
-    let saleInfo: SaleInfo
+    let saleInfo: SaleInfo?
     let accessInfo: AccessInfo
     let searchInfo: SearchInfo?
 }
@@ -42,6 +42,7 @@ struct AccessInfo: Codable {
 enum AccessViewStatus: String, Codable {
     case none = "NONE"
     case sample = "SAMPLE"
+    case fullPublicDomain = "FULL_PUBLIC_DOMAIN"
 }
 
 enum Country: String, Codable {
@@ -61,6 +62,7 @@ enum TextToSpeechPermission: String, Codable {
 enum Viewability: String, Codable {
     case noPages = "NO_PAGES"
     case partial = "PARTIAL"
+    case allPages = "ALL_PAGES"
 }
 
 enum Kind: String, Codable {
@@ -102,6 +104,7 @@ struct OfferListPrice: Codable {
 enum Saleability: String, Codable {
     case forSale = "FOR_SALE"
     case notForSale = "NOT_FOR_SALE"
+    case free = "FREE"
 }
 
 // MARK: - SearchInfo
@@ -116,7 +119,7 @@ struct VolumeInfo: Codable {
     let publisher: String?
     let publishedDate: String
     let description: String?
-    let industryIdentifiers: [IndustryIdentifier]
+    let industryIdentifiers: [IndustryIdentifier]?
     let readingModes: ReadingModes
     let pageCount: Int
     let printType: PrintType
