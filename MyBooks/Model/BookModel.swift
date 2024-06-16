@@ -121,7 +121,7 @@ struct VolumeInfo: Codable {
     let description: String?
     let industryIdentifiers: [IndustryIdentifier]?
     let readingModes: ReadingModes
-    let pageCount: Int
+    let pageCount: Int?
     let printType: PrintType
     let categories: [String]?
     let averageRating: Double?
