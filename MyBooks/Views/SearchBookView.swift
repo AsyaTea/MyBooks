@@ -21,15 +21,19 @@ struct SearchBookView: View {
                 .padding()
 
                 List(vm.books) { book in
-                    VStack(alignment: .leading) {
-                        Text(book.volumeInfo.title)
-                            .font(.headline)
-                        Text(book.volumeInfo.authors?.joined(separator: ", ") ?? "Unknown Author")
-                            .font(.subheadline)
-                        if let description = book.volumeInfo.description {
-                            Text(description)
-                                .font(.body)
-                                .lineLimit(3)
+                    NavigationLink {
+                        BookPageView(book: book)
+                    } label: {
+                        VStack(alignment: .leading) {
+                            Text(book.volumeInfo.title)
+                                .font(.headline)
+                            Text(book.volumeInfo.authors?.joined(separator: ", ") ?? "Unknown Author")
+                                .font(.subheadline)
+                            if let description = book.volumeInfo.description {
+                                Text(description)
+                                    .font(.body)
+                                    .lineLimit(3)
+                            }
                         }
                     }
                 }

@@ -10,6 +10,8 @@
 		41B477FD2C1DF0EB00732FBD /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B477FC2C1DF0EB00732FBD /* BookModel.swift */; };
 		41B477FF2C1F0A1500732FBD /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B477FE2C1F0A1500732FBD /* BooksViewModel.swift */; };
 		41B478012C1F18B200732FBD /* SearchBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B478002C1F18B200732FBD /* SearchBookView.swift */; };
+		41B478032C1F433600732FBD /* BookPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B478022C1F433600732FBD /* BookPageView.swift */; };
+		41B478062C1F467A00732FBD /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B478052C1F467A00732FBD /* MockData.swift */; };
 		41D90A242BF6727D00C35869 /* MyBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D90A232BF6727D00C35869 /* MyBooksApp.swift */; };
 		41D90A262BF6727D00C35869 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D90A252BF6727D00C35869 /* ContentView.swift */; };
 		41D90A282BF6727E00C35869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D90A272BF6727E00C35869 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		41B477FC2C1DF0EB00732FBD /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		41B477FE2C1F0A1500732FBD /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
 		41B478002C1F18B200732FBD /* SearchBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookView.swift; sourceTree = "<group>"; };
+		41B478022C1F433600732FBD /* BookPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPageView.swift; sourceTree = "<group>"; };
+		41B478052C1F467A00732FBD /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		41D90A202BF6727D00C35869 /* MyBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D90A232BF6727D00C35869 /* MyBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksApp.swift; sourceTree = "<group>"; };
 		41D90A252BF6727D00C35869 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41B478042C1F466900732FBD /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				41B478052C1F467A00732FBD /* MockData.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
 		41D90A172BF6727D00C35869 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +81,7 @@
 				41D90A382BF672BA00C35869 /* Views */,
 				41D90A2C2BF6727E00C35869 /* Persistence.swift */,
 				41D90A2E2BF6727E00C35869 /* MyBooks.xcdatamodeld */,
+				41B478042C1F466900732FBD /* Testing */,
 				41D90A272BF6727E00C35869 /* Assets.xcassets */,
 				41D90A292BF6727E00C35869 /* Preview Content */,
 			);
@@ -105,6 +118,7 @@
 				41D90A252BF6727D00C35869 /* ContentView.swift */,
 				41D90A3B2BF6737F00C35869 /* MainView.swift */,
 				41B478002C1F18B200732FBD /* SearchBookView.swift */,
+				41B478022C1F433600732FBD /* BookPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,8 +195,10 @@
 			files = (
 				41B477FD2C1DF0EB00732FBD /* BookModel.swift in Sources */,
 				41D90A302BF6727E00C35869 /* MyBooks.xcdatamodeld in Sources */,
+				41B478032C1F433600732FBD /* BookPageView.swift in Sources */,
 				41D90A2D2BF6727E00C35869 /* Persistence.swift in Sources */,
 				41B478012C1F18B200732FBD /* SearchBookView.swift in Sources */,
+				41B478062C1F467A00732FBD /* MockData.swift in Sources */,
 				41B477FF2C1F0A1500732FBD /* BooksViewModel.swift in Sources */,
 				41D90A262BF6727D00C35869 /* ContentView.swift in Sources */,
 				41D90A3C2BF6737F00C35869 /* MainView.swift in Sources */,
