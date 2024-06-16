@@ -12,9 +12,9 @@ struct MainView: View {
     
     var body: some View {
         TabView {
-            ContentView()
+            SearchBookView()
                 .tabItem {
-                    Label("Main Page", systemImage: "house.fill")
+                    Label("Search", systemImage: "magnifyingglass")
                 }
             ContentView()
                 .tabItem {
