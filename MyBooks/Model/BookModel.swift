@@ -21,7 +21,7 @@ struct Book: Codable, Identifiable {
     let kind: Kind
     var id, etag: String
     let selfLink: String
-    let volumeInfo: VolumeInfo
+    let volumeInfo: VolumeInfo?
     let saleInfo: SaleInfo?
     let accessInfo: AccessInfo
     let searchInfo: SearchInfo?
@@ -29,7 +29,7 @@ struct Book: Codable, Identifiable {
 
 // MARK: - AccessInfo
 struct AccessInfo: Codable {
-    let country: Country
+    let country: Country?
     let viewability: Viewability
     let embeddable, publicDomain: Bool
     let textToSpeechPermission: TextToSpeechPermission
@@ -47,6 +47,7 @@ enum AccessViewStatus: String, Codable {
 
 enum Country: String, Codable {
     case nl = "NL"
+    case se = "SE"
 }
 
 // MARK: - Epub
@@ -87,6 +88,7 @@ struct SaleInfoListPrice: Codable {
 
 enum CurrencyCode: String, Codable {
     case eur = "EUR"
+    case sek = "SEK"
 }
 
 // MARK: - Offer
@@ -117,7 +119,7 @@ struct VolumeInfo: Codable {
     let title: String
     let authors: [String]?
     let publisher: String?
-    let publishedDate: String
+    let publishedDate: String?
     let description: String?
     let industryIdentifiers: [IndustryIdentifier]?
     let readingModes: ReadingModes
@@ -164,6 +166,7 @@ enum TypeEnum: String, Codable {
 enum Language: String, Codable {
     case en = "en"
     case nl = "nl"
+    case sv = "sv"
 }
 
 enum MaturityRating: String, Codable {

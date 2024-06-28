@@ -25,11 +25,11 @@ struct SearchBookView: View {
                         BookDetailPageView(vm: vm, book: book)
                     } label: {
                         VStack(alignment: .leading) {
-                            Text(book.volumeInfo.title)
+                            Text(book.volumeInfo?.title ?? "")
                                 .font(.headline)
-                            Text(book.volumeInfo.authors?.joined(separator: ", ") ?? "Unknown Author")
+                            Text(book.volumeInfo?.authors?.joined(separator: ", ") ?? "Unknown Author")
                                 .font(.subheadline)
-                            if let description = book.volumeInfo.description {
+                            if let description = book.volumeInfo?.description {
                                 Text(description)
                                     .font(.body)
                                     .lineLimit(3)
